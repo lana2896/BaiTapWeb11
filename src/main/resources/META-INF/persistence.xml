@@ -8,6 +8,8 @@
 <class>shop.entity.Share_24110347</class>
 <class>shop.entity.Favorite_24110347</class>
 <class>shop.entity.CartItem_24110347</class>
+<class>shop.entity.Order_24110347</class>
+<class>shop.entity.OrderDetail_24110347</class>
 <properties>
 <property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
 <property name="jakarta.persistence.jdbc.url"

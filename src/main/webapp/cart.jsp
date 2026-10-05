@@ -111,7 +111,7 @@
         <c:if test="${hasProblem}">
             <div class="alert alert-warning">
                 Có sản phẩm không còn đủ điều kiện mua (đã ngừng bán, hết hàng hoặc vượt tồn kho).
-                Vui lòng điều chỉnh số lượng hoặc xóa sản phẩm đó để giỏ hàng hợp lệ.
+                Vui lòng điều chỉnh số lượng hoặc xóa sản phẩm đó trước khi thanh toán.
             </div>
         </c:if>
 
@@ -123,7 +123,14 @@
                     <button type="submit" class="btn btn-outline-danger">Xóa toàn bộ</button>
                 </form>
             </div>
-
+            <c:choose>
+                <c:when test="${hasProblem}">
+                    <button class="btn btn-success" disabled>Tiến hành thanh toán</button>
+                </c:when>
+                <c:otherwise>
+                    <a class="btn btn-success" href="${pageContext.request.contextPath}/checkout">Tiến hành thanh toán</a>
+                </c:otherwise>
+            </c:choose>
         </div>
     </c:otherwise>
 </c:choose>

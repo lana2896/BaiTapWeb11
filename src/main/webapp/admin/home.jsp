@@ -28,7 +28,6 @@
     </div>
 </div>
 
-
 <div class="mt-4">
     <a class="btn btn-primary" href="${pageContext.request.contextPath}/admin/videos">Quản lý Video</a>
 </div>

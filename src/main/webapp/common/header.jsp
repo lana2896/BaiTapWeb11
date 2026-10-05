@@ -18,6 +18,7 @@
                                 <span class="badge rounded-pill bg-danger">${empty sessionScope.cartCount ? 0 : sessionScope.cartCount}</span>
                             </a>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/orders">Đơn hàng của tôi</a></li>
                     </c:if>
                     <li class="nav-item"><span class="nav-link text-light">Xin chào, ${sessionScope.account.fullname}</span></li>
                     <li class="nav-item"><a class="nav-link" href="${pageContext.request.contextPath}/logout">Đăng xuất</a></li>

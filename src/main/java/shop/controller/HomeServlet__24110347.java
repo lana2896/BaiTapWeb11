@@ -16,6 +16,13 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Trang chu vai tro User: hien thi tat ca video theo tung Category, moi
+ * Category phan trang rieng 3 video/trang (Cau 4), kem so luong video cua
+ * tung Category (Cau 5). Tham so phan trang cua moi category duoc truyen qua
+ * query string dang "p{CategoryId}", vi du: ?p3=2 nghia la Category co id=3
+ * dang o trang 2.
+ */
 @WebServlet("/home")
 public class HomeServlet__24110347 extends HttpServlet {
     private final CategoryService_24110347 categoryService = new CategoryService_24110347();

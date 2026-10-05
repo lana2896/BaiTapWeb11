@@ -9,7 +9,7 @@ import shop.util.WebUtil_24110347;
 
 import java.io.IOException;
 
-@WebFilter({"/cart", "/cart/*"})
+@WebFilter({"/cart", "/cart/*", "/checkout", "/orders", "/orders/*"})
 public class AuthFilter_24110347 implements Filter {
 
     @Override
@@ -20,12 +20,12 @@ public class AuthFilter_24110347 implements Filter {
 
         User_24110347 account = WebUtil_24110347.currentUser(request);
         if (account == null) {
-            WebUtil_24110347.warning(request, "Vui lòng đăng nhập để sử dụng giỏ hàng.");
+            WebUtil_24110347.warning(request, "Vui lòng đăng nhập để sử dụng giỏ hàng và đặt hàng.");
             response.sendRedirect(request.getContextPath() + "/login");
             return;
         }
         if (account.isAdmin()) {
-            WebUtil_24110347.warning(request, "Tài khoản quản trị chỉ được xem sản phẩm, không sử dụng giỏ hàng.");
+            WebUtil_24110347.warning(request, "Tài khoản quản trị chỉ được xem sản phẩm, không sử dụng giỏ hàng và đặt hàng.");
             response.sendRedirect(request.getContextPath() + "/home");
             return;
         }
