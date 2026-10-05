@@ -1,0 +1,15 @@
+body { background: #f4f6f8; }
+.video-card { border: 1px solid #e2e6ea; border-radius: 10px; overflow: hidden; background: #fff; height: 100%; }
+.video-card .poster-box { height: 150px; }
+.poster-box { background: #dde3ea; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #6b7a86; font-size: 13px; }
+.poster-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.video-card .body { padding: 10px 12px; }
+.category-section { margin-bottom: 36px; }
+.pager a, .pager span { display: inline-block; padding: 4px 10px; margin: 0 2px; border-radius: 6px; text-decoration: none; }
+.pager a { background: #eee; color: #333; }
+.pager span.active { background: #0d6efd; color: #fff; }
+.auth-card { max-width: 420px; margin: 60px auto; }
+.price-tag { color: #d63384; font-weight: 600; }
+.cart-qty { width: 80px; }
+.cart-thumb { width: 56px; height: 36px; overflow: hidden; border-radius: 4px; background: #dde3ea; display: flex; align-items: center; justify-content: center; color: #6b7a86; }
+.cart-thumb img { width: 56px; height: 36px; object-fit: cover; display: block; }

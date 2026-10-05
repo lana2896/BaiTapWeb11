@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+<persistence-unit name="dataSource">
+<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+<class>shop.entity.User_24110347</class>
+<class>shop.entity.Category_24110347</class>
+<class>shop.entity.Video_24110347</class>
+<class>shop.entity.Share_24110347</class>
+<class>shop.entity.Favorite_24110347</class>
+<class>shop.entity.CartItem_24110347</class>
+<properties>
+<property name="jakarta.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+<property name="jakarta.persistence.jdbc.url"
+  value="jdbc:sqlserver://localhost:1433;databaseName=SHOPVIDEO;encrypt=true;trustServerCertificate=true" />
+<property name="jakarta.persistence.jdbc.user" value="root" />
+<property name="jakarta.persistence.jdbc.password" value="2896" />
+<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />
+<property name="hibernate.show_sql" value="true" />
+<property name="hibernate.format_sql" value="true" />
+<property name="hibernate.hbm2ddl.auto" value="none" />
+</properties>
+</persistence-unit>
+</persistence>
